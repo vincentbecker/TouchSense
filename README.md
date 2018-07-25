@@ -2,7 +2,7 @@
 Repository containing the code for the ISWC paper: "TouchSense: Classifying Finger Touches and Measuring their Force with an Electromyography Armband"
 
 The goal of this project is to classify finger touches and estimate their force only by using an EMG armband. We wanted the method to be wireless, 
-inexpensive, and to run in real time. Our method classifies touches with the thumb, the forefinger, and the middle finger. The EMG data is gathered with a [Thalmic Labs Myo](www.myo.com). 
+inexpensive, and to run in real time. Our method classifies touches with the thumb, the forefinger, and the middle finger. The EMG data is gathered with a [Thalmic Labs Myo](https://www.myo.com/). 
 We classify the finger used with a neural network designed for EMG data processing which we trained in Tensorflow. The network runs in inference mode on an Android smartphone (10 ms inference execution time per window on an LG Nexus 5X). 
 The strength estimation follows a simpler approach and also runs on the Android smartphone. 
 
@@ -39,7 +39,7 @@ Time synchronisation etc. TODO
 
 ## Data preparation
 *Requirements*:
-- A [Matlab](www.mathworks.com/products/matlab.html) installation
+- A [Matlab](https://www.mathworks.com/products/matlab.html) installation
 - The files csv files containg the EMG and FSR values. 
 TODO
 
