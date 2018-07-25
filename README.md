@@ -13,10 +13,10 @@ For details on the method please find the full paper [here](https://people.inf.e
 
 ### Possible applications
 We built four applications which use our method to make surfaces interactive in order to add functionality. 
-1. Using any surface to control a smart lamp. The user can press with his / her forefinger and middle finger to increase or decrease the brightness, respectively ![Lamp demo](https://github.com/vincentbecker/TouchSense/tree/master/images/Demo_lamp_new.png)
-2. Adding functionality to a text marking application. The space around can be used as a virtual color palette where the color and width of the strokes can be changed and also strokes may be reverted ![Text marking demo](https://github.com/vincentbecker/TouchSense/tree/master/images/Demo_text_marking.png)
-3. We extend the functionality of a tablet stylus by allowing the user to change the writing color by pressing against the stylus with the thumb ![Stylus demo](https://github.com/vincentbecker/TouchSense/tree/master/images/Demo_stylus2.png)
-4. A bicycle map application which lets the user change the map type and zoom in and out without letting go of the handlebar ![Bike demo](https://github.com/vincentbecker/TouchSense/tree/master/images/Demo_bike.png)
+1. Using any surface to control a smart lamp. The user can press with his / her forefinger and middle finger to increase or decrease the brightness, respectively ![Lamp demo](images/Demo_lamp_new.png)
+2. Adding functionality to a text marking application. The space around can be used as a virtual color palette where the color and width of the strokes can be changed and also strokes may be reverted ![Text marking demo](images/Demo_text_marking.png)
+3. We extend the functionality of a tablet stylus by allowing the user to change the writing color by pressing against the stylus with the thumb ![Stylus demo](images/Demo_stylus2.png)
+4. A bicycle map application which lets the user change the map type and zoom in and out without letting go of the handlebar ![Bike demo](images/Demo_bike.png)
 
 We encourage anyone to use our code to build new applications. Please let us know if you are working on an interesting project. 
 
