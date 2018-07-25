@@ -7,20 +7,20 @@ We classify the finger used with a neural network designed for EMG data processi
 The strength estimation follows a simpler approach and also runs on the Android smartphone. 
 
 We built a hardware setup consisting of three force-sensitive resistors in order to measure the actual pressure applied by the fingers during data collection. This way it is possible to evaluate the quality of our force estimation and also to train personalized force regressors.  
-<img src="images/measurement_setup.jpg" alt="Hardware setup" height="100">
+<img align="center" src="images/measurement_setup.jpg" alt="Hardware setup" height="200">
 
 For details on the method please find the full paper [here](https://people.inf.ethz.ch/vbecker/). TODO A video describing our approach can be found here. TODO
 
 ### Possible applications
 We built four applications which use our method to make surfaces interactive in order to add functionality. 
 1. Using any surface to control a smart lamp. The user can press with his / her forefinger and middle finger to increase or decrease the brightness, respectively.  
-<img src="images/Demo_lamp_new.png" alt="Smart lamp demo" height="100">
+<img align="center" src="images/Demo_lamp_new.png" alt="Smart lamp demo" height="200">
 2. Adding functionality to a text marking application. The space around can be used as a virtual color palette where the color and width of the strokes can be changed and also strokes may be reverted.  
-<img src="images/Demo_text_marking.png" alt="Text marking demo" height="100">
+<img align="center" src="images/Demo_text_marking.png" alt="Text marking demo" height="200">
 3. We extend the functionality of a tablet stylus by allowing the user to change the writing color by pressing against the stylus with the thumb.  
-<img src="images/Demo_stylus2.png" alt="Stylus demo" height="100">
+<img align="center" src="images/Demo_stylus2.png" alt="Stylus demo" height="200">
 4. A bicycle map application which lets the user change the map type and zoom in and out without letting go of the handlebar.  
-<img src="images/Demo_bike.jpg" alt="Bike demo" height="100">
+<img align="center" src="images/Demo_bike.jpg" alt="Bike demo" height="200">
 
 We encourage anyone to use our code to build new applications. Please let us know if you are working on an interesting project. 
 
