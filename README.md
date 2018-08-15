@@ -1,6 +1,8 @@
 # TouchSense
 Repository containing the code for the ISWC paper: "TouchSense: Classifying Finger Touches and Measuring their Force with an Electromyography Armband"
 
+Contact by [email](mailto:vincent.becker@inf.ethz.ch).
+
 The goal of this project is to classify finger touches and estimate their force only by using an EMG armband. We wanted the method to be wireless, 
 inexpensive, and to run in real time. Our method classifies touches with the thumb, the forefinger, and the middle finger. The EMG data is gathered with a [Thalmic Labs Myo](https://www.myo.com/). 
 We classify the finger used with a neural network designed for EMG data processing which we trained in Tensorflow. The network runs in inference mode on an Android smartphone (10 ms inference execution time per window on an LG Nexus 5X). 
@@ -22,37 +24,5 @@ We built four applications which use our method to make surfaces interactive in 
 4. A bicycle map application which lets the user change the map type and zoom in and out without letting go of the handlebar.  
 <p align="center"><img src="images/Demo_bike.jpg" alt="Bike demo" height="200"></p>
 
-We encourage anyone to use our code to build new applications. Please let us know if you are working on an interesting project. 
-
-In the following we briefly describe the necessary steps to execute the full project pipeline from data collection to running the inference on a smartphone. 
-## Dataset
-We collected a dataset from 18 participants. For access to the dataset please send us an [email](mailto:vincent.becker@inf.ethz.ch).
-
-## Gathering the data
-*Requirements*:
-- The hardware setup as in the paper (the paper supplement contains a circuit diagram)
-- An Arduino Yún
-- The script in the *Arduino* folder
-- A Myo armband
-
-Time synchronisation etc. TODO
-
-## Data preparation
-*Requirements*:
-- A [Matlab](https://www.mathworks.com/products/matlab.html) installation
-- The files csv files containg the EMG and FSR values. 
-TODO
-
-## Training the network
-*Requirements*:
-- A [Tensorflow](https://www.tensorflow.org/) installation
-- The mat-file resulting form the previous step
-TODO
-
-## Network inference in Android
-*Requirements*:
-- An [AndroidStudio](https://developer.android.com/studio/) installation
-- A Myo armband
-- An Android smartphone
-Android code is built on top of ... found here. 
-TODO
+## Dataset and Code
+Coming soon. 
