@@ -11,8 +11,6 @@ The strength estimation follows a simpler approach and also runs on the Android 
 We built a hardware setup consisting of three force-sensitive resistors in order to measure the actual pressure applied by the fingers during data collection. This way it is possible to evaluate the quality of our force estimation and also to train personalized force regressors.  
 <p align="center"><img src="images/measurement_setup.jpg" alt="Hardware setup" height="200"></p>
 
-For details on the method please find the full paper [here](https://people.inf.ethz.ch/vbecker/). TODO A video describing our approach can be found here. TODO
-
 ### Possible applications
 We built four applications which use our method to make surfaces interactive in order to add functionality. 
 1. Using any surface to control a smart lamp. The user can press with his / her forefinger and middle finger to increase or decrease the brightness, respectively.  
