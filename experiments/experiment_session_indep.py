@@ -256,9 +256,9 @@ def train_model(train_samples, train_labels_one_hot, test_samples, test_labels_o
 
     else:
         # Save the graph
-        tf.train.write_graph(sess.graph_def, filePath, 'model_cnn_lstm.pbtxt')
+        tf.train.write_graph(sess.graph_def, filePath, 'model_participant_' + participant_name'.pbtxt')
         # Save a checkpoint file, which will store the above assignment
-        saver.save(sess, filePath + '/' + 'model_cnn_lstm.ckpt')
+        saver.save(sess, filePath + '/' + 'model_participant_' + participant_name'.ckpt')
 
 if __name__ == "__main__":
     # If we don't want to test, we train on everything.
