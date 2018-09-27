@@ -44,7 +44,7 @@ Coming soon.
   * To train on a single user, you can run experiment_session_indep.py for a specific participant with the test flag set to false.
 * The model is saved in the experiments folder.
 
-## Freezing a model
+### Freezing a model
 Coming soon.
 
 ## Running the Android application
