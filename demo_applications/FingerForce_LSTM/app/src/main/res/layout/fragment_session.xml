@@ -1,0 +1,91 @@
+ <!--><ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" ><!-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorBackground"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/session_tv_sessionName"
+            android:text="@string/session_name"
+            android:paddingTop="11dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp" />
+
+        <EditText
+            android:id="@+id/session_et_sessionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/session_et_sessionName"
+            android:layout_below="@id/session_tv_sessionName"
+            android:paddingTop="11dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp" />
+
+        <ToggleButton
+            android:id="@+id/session_tb_sessionToggle"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/session_et_sessionName"
+            android:layout_below="@id/session_et_sessionName"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="11dp"
+            android:textOff="@string/session_tb_begin"
+            android:textOn="@string/session_tb_finish" />
+
+        <Button
+            android:id="@+id/session_btn_gatherData"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/session_tb_gatherData"
+            android:layout_alignBaseline="@+id/session_tb_sessionToggle"
+            android:layout_alignBottom="@+id/session_tb_sessionToggle"
+            android:layout_toEndOf="@+id/session_tb_sessionToggle"
+            android:layout_marginStart="11dp" />
+
+        <Button
+            android:id="@+id/session_btn_send"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/session_tb_sessionToggle"
+            android:layout_below="@id/session_tb_sessionToggle"
+            android:layout_marginTop="12dp"
+            android:text="@string/session_btn_send" />
+
+        <Button
+            android:id="@+id/session_btn_clear"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/session_btn_send"
+            android:layout_below="@id/session_tb_sessionToggle"
+            android:layout_alignStart="@id/session_btn_gatherData"
+            android:layout_marginTop="12dp"
+            android:text="@string/session_btn_clear" />
+
+        <TextView
+            android:id="@+id/session_tv_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/session_btn_send"
+            android:text="@string/session_tv_connect"
+            android:paddingTop="11dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp"/>
+
+        <ListView
+            android:id="@+id/session_lv_sessionsList"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/session_tv_connect"
+            android:paddingTop="11dp"
+            android:paddingEnd="11dp"
+            android:paddingStart="11dp"/>
+
+
+    </RelativeLayout>
+<!--></ScrollView><!-->

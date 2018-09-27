@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">FingerForce</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_play">Play</string>
+    <string name="header_app_firstname">Myo EMG</string>
+    <string name="header_app_secondname">Graphic Visualizer</string>
+    <string name="openDrawer">Open the navigation drawer</string>
+    <string name="closeDrawer">Close the navigation drawer</string>
+    <string name="connect">Connect Myo</string>
+    <string name="disconnect">Disconnect Myo</string>
+    <string name="nothing_to_show">Nothing to show here…</string>
+    <string name="stream_not_enabled">Sensor stream not enabled</string>
+    <string name="connection_started">Connection started…</string>
+    <string name="connection_stopped">Connection stopped</string>
+    <string name="scan_over">Device scan over</string>
+    <string name="no_myo">No Myo found!</string>
+    <string name="you_must_perform_a_scan">You haven\'t already found a Myo, you must first perform a device scan. Do it now?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="tutorial_menu">Press this button to open menu</string>
+    <string name="disclaimer">To use this app you need a Myo</string>
+    <string name="description">You can use this app to visualize raw EMG data from a Myo device. If you find a bug, feel free to report it :)</string>
+    <string name="author">Nicola Corti</string>
+    <string name="source_code">To access the source code press here</string>
+    <string name="session_tb_begin">Raw data</string>
+    <string name="session_tb_finish">Finish session</string>
+    <string name="session_et_sessionName">Enter session name here</string>
+    <string name="scan_start">Device scan started…</string>
+    <string name="session_tv_connect"><b><font color = 'red'>Not connected. </font></b>Connect in Control tab first.</string>
+    <string name="session_tv_connect_connected"><b><font color = '#006400'>Myo connected.</font></b></string>
+    <string name="session_tst_name_exists">This session name already exists!</string>
+    <string name="session_tst_empty_name">Please choose a name for your session!</string>
+    <string name="connection_failed">Connection failed. Please retry!</string>
+    <string name="session_name">Session name:</string>
+    <string name="session_connect_alreadyStreaming">Already streaming RAW data. Disable it in control tab.</string>
+    <string name="session_connect_sessionStreaming">Currently streaming a session.</string>
+    <string name="session_btn_send">Send sessions</string>
+    <string name="session_tst_zipping">Zipping files…</string>
+    <string name="session_btn_clear">Clear</string>
+    <string name="session_tb_gatherData">Training data</string>
+    <string name="connect_arduino">Connect arduino</string>
+    <string name="disconnect_arduino">Disconnect arduino</string>
+
+    <string name="location_title">Location services required</string>
+    <string name="location_message">Do you want to enable the location services?</string>
+    <string name="no_permission">This permission is needed to run the app. Closing...</string>
+    <string name="default_value">10</string>
+    <string name="mmav">MAV</string>
+    <string name="thumb">Thumb</string>
+    <string name="forefinger">Forefinger</string>
+    <string name="middlefinger">Middle finger</string>
+
+    <!-- Map -->
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last location update time</string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+
+    <string name="location_settings_inadequate_warning">The location settings on the device are not
+        adequate to run this sample. Fix in Settings.</string>
+
+    <string name="permission_rationale_location">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="permission_required_toast">The location permission is required for running this app.</string>
+
+    <!-- Text -->
+    <string name="story">
+        \n \n
+        A man flying in a hot air balloon suddenly realizes he’s lost. He reduces height and spots a man down below.
+        He lowers the balloon further and shouts to get directions, "Excuse me, can you tell me where I am?"\n
+        The man below says: "Yes. You're in a hot air balloon, hovering 30 feet above this field."\n
+        "You must work in Information Technology," says the balloonist.\n
+        "I do" replies the man. "How did you know?"\n
+        "Well," says the balloonist, "everything you have told me is technically correct, but It's of no use to anyone."
+        The man below replies, "You must work in management."\n
+        "I do," replies the balloonist, *"But how'd you know?"*\n
+        "Well", says the man, "you don’t know where you are or where you’re going, but you expect me to be able to help.
+        You’re in the same position you were before we met, but now it’s my fault."\n
+        \n
+        “Knock, knock.”\n
+        “Who’s there?”\n
+        very long pause…\n
+        “Java.”\n
+        :-o\n
+        \n
+        A SQL query goes into a bar, walks up to two tables and asks, "Can I join you?"\n
+        \n
+        A guy is standing on the corner of the street smoking one cigarette after another. A lady walking by notices him and says
+        "Hey, don't you know that those things can kill you? I mean, didn't you see the giant warning on the box?!"
+        "That's OK" says the guy, puffing casually "I'm a computer programmer"
+        "So? What's that got to do with anything?"
+        "We don't care about warnings. We only care about errors."\n
+        \n
+        A programmer is at work when his wife calls and asks him to go to the store. She says she needs a gallon of milk, and if they have fresh eggs, buy a dozen. He comes home with 12 gallons of milk.
+</string>
+
+    <!-- Stylus -->
+    <string name="reset">Reset</string>
+    <string name="colour">Colour</string>
+    <string name="width">Width: 10</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewMMAV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/mmav"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMMAVvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/default_value"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="50dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/progress_scale_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultsView1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="525dp"
+        android:text="@string/default_value"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewThumb"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="575dp"
+        android:text="@string/thumb"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="50dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="100dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/progress_scale_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultsView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="525dp"
+        android:text="@string/default_value"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewForefinger"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="575dp"
+        android:text="@string/forefinger"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar3"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="50dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="100dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/progress_scale_drawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultsView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="525dp"
+        android:text="@string/default_value"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMiddlefinger"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="575dp"
+        android:text="@string/middlefinger"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+    <Button
+        android:id="@+id/buttonplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+
+</android.support.constraint.ConstraintLayout>

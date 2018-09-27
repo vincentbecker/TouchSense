@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp">
+
+    <ImageButton
+        android:id="@+id/session_row_btn_delete"
+        android:contentDescription="Delete session"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="11dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_trash"/>
+
+    <TextView
+        android:id="@+id/session_row_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toStartOf="@id/session_row_btn_delete"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/ColorPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+</RelativeLayout>

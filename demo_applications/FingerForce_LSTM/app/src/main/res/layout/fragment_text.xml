@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ch.ethz.inf.vs.fingerforce.emgdata.ui.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="@string/colour"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageViewColour"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@color/ColorRed"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textViewWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:text="@string/width"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/story"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</android.support.constraint.ConstraintLayout>

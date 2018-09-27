@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background" android:drawable="@color/ColorTransparent"/>
+
+    <item android:id="@android:id/progress">
+        <scale android:scaleGravity="bottom" android:scaleWidth="0%" android:scaleHeight="100%">
+            <shape >
+                <solid android:color="@color/ColorBlue"/>
+                <corners android:topRightRadius="1dp" android:topLeftRadius="1dp"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>
