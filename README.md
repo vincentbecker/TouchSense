@@ -22,5 +22,30 @@ We built four applications which use our method to make surfaces interactive in 
 4. A bicycle map application which lets the user change the map type and zoom in and out without letting go of the handlebar.  
 <p align="center"><img src="images/Demo_bike.jpg" alt="Bike demo" height="200"></p>
 
-## Dataset and Code
-Coming soon. 
+## Gathering your own data
+Coming soon.
+
+## Getting the dataset and preprocessing
+* If you want our dataset please send us an email at...
+* Once obtained, unpack the data folder. The suggested location is data_preprocessing, i.e. the folder data_preprocessing/data should exist.
+* This is the raw data as we obtained from our setup. If you want to use it with our architecture you have to preprocess it. 
+  * Use the lstm_data_generation.m MATLAB script for this purpose.
+  * Once you run the script, select the "data" folder in the popup. In the next window you can choose which participants to include in the generated samples. By default you will generate the data including every participant.
+  * When finished, the files 'lstm_data_users.mat' and 'lstm_data_users_nofore.mat' are generated in the data_preprocessing folder, and contain the preprocessed samples.
+
+## Running the experiments.
+* Put the .mat files you generated in the previous step inside the experiments folder. Here you can run the mixed, user-independent and session independent experiments which are shown in the paper. If you want to run an experiments for two finder only (i.e. without forefinger), you have to edit the 'all_fingers' flag in the experiments' script to False.
+* usage: for the participant- and session- independent experiments you have to specify the participant's ID to use. For example, to run the session-independent experiment on participant 1 you would write 'python experiment_session_indep.py p1'.
+* Results are logged in the console and the confusion matrices are saved automatically to a folder. You can disable this feature by changing the specific flag to False.
+
+## Training a model
+* If you want to train your own model you have two options. 
+  * To train the model on the whole data, you can run experiment_mixed.py with the test flag set to False.
+  * To train on a single user, you can run experiment_session_indep.py for a specific participant with the test flag set to false.
+* The model is saved in the experiments folder.
+
+## Freezing a model
+Coming soon.
+
+## Running the Android application
+Coming soon.
