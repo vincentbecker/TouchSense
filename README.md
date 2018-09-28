@@ -48,4 +48,5 @@ Coming soon.
 Coming soon.
 
 ## Running the Android application
-Coming soon.
+* Before installing the application on a smartphone you have to put the model file obtained in the previous step in the Android application folder. The frozen model should be located at demo_applications/FingerForce_LSTM/app/src/main/assets/frozen_model.pb. 
+* Every time the model is changed, the app has to be uninstalled and reinstalled with the new file in place.
