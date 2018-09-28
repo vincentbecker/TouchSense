@@ -10,9 +10,7 @@ import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
 
 public class TensorFlowClassifier {
 
-    //private static final String MODEL_FILE = "file:///android_asset/optimized_model.pb";
-    //private static final String MODEL_FILE = "file:///android_asset/optimized_model_cnn_lstm.pb";
-    private static final String MODEL_FILE = "file:///android_asset/frozen_model_cnn_lstm_vincent_new_3fingers.pb";
+    private static final String MODEL_FILE = "file:///android_asset/frozen_model.pb";
     private static final String INPUT_NODE = "input";
     private static final String OUTPUT_NODE = "softmax";
     private static final String[] outputnames = {OUTPUT_NODE};
