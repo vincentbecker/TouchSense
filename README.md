@@ -45,7 +45,13 @@ Coming soon.
 * The model is saved in the experiments folder.
 
 ### Freezing a model
-Coming soon.
+* Once the model is trained we have to freeze its weights to produce a .pb file.
+* Obtain a copy of the graph freezing script and put it in the experiments folder, along with the produced model files.
+* Run the script with the following command:
+python freeze_graph.py
+--input_graph=graph_name_here.pb \
+--input_checkpoint=checkpoint_name_here.ckpt \
+--output_graph=/tmp/frozen_model.pb --output_node_names=softmax
 
 ## Running the Android application
 * Before installing the application on a smartphone you have to put the model file obtained in the previous step in the Android application folder. The frozen model should be located at demo_applications/FingerForce_LSTM/app/src/main/assets/frozen_model.pb. 
