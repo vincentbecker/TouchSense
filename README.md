@@ -45,7 +45,7 @@ Coming soon. To obtain the ground truth force values, you will have to build you
 * The model is saved in the experiments folder.
 
 ### Freezing a model
-* Once the model is trained we have to freeze its weights to produce a .pb file in order to use it on a smartphone.
+* Once the model is trained we have to freeze its weights to produce a `.pb`-file in order to use it on a smartphone.
 * Use the graph freezing script from the Tensorflow repository, specifying the paths to the produced model files.
 * Run the script with the following command:
 ```shell
