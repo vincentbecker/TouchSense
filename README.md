@@ -22,37 +22,38 @@ We built four applications which use our method to make surfaces interactive in 
 4. A bicycle map application which lets the user change the map type and zoom in and out without letting go of the handlebar.  
 <p align="center"><img src="images/Demo_bike.jpg" alt="Bike demo" height="200"></p>
 
-## Gathering your own data
-Coming soon.
-
-## Getting the dataset and preprocessing
-* If you want our dataset please send us an email at...
-* Once obtained, unpack the data folder. The suggested location is data_preprocessing, i.e. the folder data_preprocessing/data should exist.
+## Obtaining the dataset and preprocessing
+* If you want our dataset please send us an [email](mailto:vincent.becker@inf.ethz.ch). Due to data regulations we have to record any recipient of the data. 
+* Once obtained, unpack the data folder. The suggested location is *data_preprocessing*, i.e. the folder `data_preprocessing/data should` exist.
 * This is the raw data as we obtained from our setup. If you want to use it with our architecture you have to preprocess it. 
-  * Use the lstm_data_generation.m MATLAB script for this purpose.
-  * Once you run the script, select the "data" folder in the popup. In the next window you can choose which participants to include in the generated samples. By default you will generate the data including every participant.
-  * When finished, the files 'lstm_data_users.mat' and 'lstm_data_users_nofore.mat' are generated in the data_preprocessing folder, and contain the preprocessed samples.
+  * Use the MATLAB script `lstm_data_generation.m`  for this purpose.
+  * Once you run the script, select the `data` folder in the popup window. In the next window, you can choose which participants to include in the generated samples. By default you will generate the data including every participant.
+  * When finished, the files `lstm_data_users.mat` and `lstm_data_users_nofore.mat` are generated in the `data_preprocessing` folder, and contain the preprocessed samples in the two versions: once including the forefinger and once without.
 
+## Gathering your own data
+Coming soon. To obtain the ground truth force values, you will have to build your own hardware setup, as described in the paper. 
+  
 ## Running the experiments.
-* Put the .mat files you generated in the previous step inside the experiments folder. Here you can run the mixed, user-independent and session independent experiments which are shown in the paper. If you want to run an experiments for two finder only (i.e. without forefinger), you have to edit the 'all_fingers' flag in the experiments' script to False.
-* usage: for the participant- and session- independent experiments you have to specify the participant's ID to use. For example, to run the session-independent experiment on participant 1 you would write 'python experiment_session_indep.py p1'.
-* Results are logged in the console and the confusion matrices are saved automatically to a folder. You can disable this feature by changing the specific flag to False.
+* Put the `.mat`-files you generated in the previous step inside the `experiments` folder. Here you can run the mixed, user-independent and session independent experiments which are described in the paper. If you want to run the experiments for two fingers only (i.e. without the forefinger), you have to edit the `all_fingers` flag in the experiments' scripts to `False`.
+* Usage: for the participant- and session- independent experiments you have to specify the participant's ID. For example, to run the session-independent experiment on participant 1 you would write `python experiment_session_indep.py p1`.
+* Results are logged in the console and the confusion matrices are saved automatically. You can disable this feature by changing the specific flag to `False`.
 
 ## Training a model
 * If you want to train your own model you have two options. 
-  * To train the model on the whole data, you can run experiment_mixed.py with the test flag set to False.
-  * To train on a single user, you can run experiment_session_indep.py for a specific participant with the test flag set to false.
+  * To train the model all the data, you can run `experiment_mixed.py` with the test flag set to `False`.
+  * To train on a single user, you can run `experiment_session_indep.py` for a specific participant with the test flag set to `False`.
 * The model is saved in the experiments folder.
 
 ### Freezing a model
-* Once the model is trained we have to freeze its weights to produce a .pb file.
-* Obtain a copy of the graph freezing script and put it in the experiments folder, along with the produced model files.
+* Once the model is trained we have to freeze its weights to produce a .pb file in order to use it on a smartphone.
+* Use the graph freezing script from the Tensorflow repository, specifying the paths to the produced model files.
 * Run the script with the following command:
-python freeze_graph.py
+```python freeze_graph.py
 --input_graph=graph_name_here.pb \
 --input_checkpoint=checkpoint_name_here.ckpt \
 --output_graph=/tmp/frozen_model.pb --output_node_names=softmax
+```
 
 ## Running the Android application
-* Before installing the application on a smartphone you have to put the model file obtained in the previous step in the Android application folder. The frozen model should be located at demo_applications/FingerForce_LSTM/app/src/main/assets/frozen_model.pb. 
+* Before installing the application on a smartphone you have to put the model file obtained in the previous step in the Android application folder. The frozen model should be located at `demo_applications/FingerForce_LSTM/app/src/main/assets/frozen_model.pb`. 
 * Every time the model is changed, the app has to be uninstalled and reinstalled with the new file in place.
