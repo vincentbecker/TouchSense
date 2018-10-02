@@ -24,7 +24,7 @@ We built four applications which use our method to make surfaces interactive in 
 
 ## Obtaining the dataset and preprocessing
 * If you want our dataset please send us an [email](mailto:vincent.becker@inf.ethz.ch). Due to data regulations we have to record any recipient of the data. 
-* Once obtained, unpack the data folder. The suggested location is *data_preprocessing*, i.e. the folder `data_preprocessing/data should` exist.
+* Once obtained, unpack the data folder. The suggested location is `data_preprocessing`, i.e. the folder `data_preprocessing/data` should exist.
 * This is the raw data as we obtained from our setup. If you want to use it with our architecture you have to preprocess it. 
   * Use the MATLAB script `lstm_data_generation.m`  for this purpose.
   * Once you run the script, select the `data` folder in the popup window. In the next window, you can choose which participants to include in the generated samples. By default you will generate the data including every participant.
@@ -48,7 +48,8 @@ Coming soon. To obtain the ground truth force values, you will have to build you
 * Once the model is trained we have to freeze its weights to produce a .pb file in order to use it on a smartphone.
 * Use the graph freezing script from the Tensorflow repository, specifying the paths to the produced model files.
 * Run the script with the following command:
-```python freeze_graph.py
+```shell
+python freeze_graph.py
 --input_graph=graph_name_here.pb \
 --input_checkpoint=checkpoint_name_here.ckpt \
 --output_graph=/tmp/frozen_model.pb --output_node_names=softmax
