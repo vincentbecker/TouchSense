@@ -31,7 +31,7 @@ We built four applications which use our method to make surfaces interactive in 
   * When finished, the files `lstm_data_users.mat` and `lstm_data_users_nofore.mat` are generated in the `data_preprocessing` folder, and contain the preprocessed samples in the two versions: once including the forefinger and once without.
 
 ## Gathering your own data
-Coming soon. To obtain the ground truth force values, you will have to build your own hardware setup, as described in the paper. 
+To obtain the ground truth force values, you will have to build your own hardware setup, as described in the paper. 
   
 ## Running the experiments.
 * Put the `.mat`-files you generated in the previous step inside the `experiments` folder. Here you can run the mixed, user-independent and session independent experiments which are described in the paper. If you want to run the experiments for two fingers only (i.e. without the forefinger), you have to edit the `all_fingers` flag in the experiments' scripts to `False`.

@@ -15,7 +15,8 @@ sub_folders = files(dir_flags);
 jList = java.util.ArrayList;
 participants_sessions = [];
 for k = 1 : length(sub_folders)
-    if (~isempty(dir(strcat(sub_folders(k).folder, filesep, sub_folders(k).name, filesep, "*.csv"))))
+    s = char(strcat(sub_folders(k).folder, filesep, sub_folders(k).name, filesep, "*.csv"));
+    if (~isempty(dir(s)))
         participants_sessions(end+1) = str2double(strrep(strrep(sub_folders(k).name, "p", ""), "_s", "."));
     end
 end
